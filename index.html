@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Appframework by jiucai</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Appframework : " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Appframework</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Appframework</h1>
-          <h2></h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/jiucai/appframework">View on GitHub</a>
+
+          <h1 id="project_title">Appframework</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/jiucai/appframework/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/jiucai/appframework/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/jiucai/appframework/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/jiucai/appframework/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/jiucai/appframework" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h1>
 
-        <hr>
+<p>appframework is a java web application framework based <a href="http://www.springsource.org/spring-framework">spring-framework</a></p>
 
-        <section id="main_content">
-          <h3>
-<a name="welcome-to-appframework-pages" class="anchor" href="#welcome-to-appframework-pages"><span class="octicon octicon-link"></span></a>Welcome to Appframework Pages.</h3>
+<p>appframework is for the Java programming language.</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>appframework features:</p>
 
-<p>the old page is <a href="https://code.google.com/p/appframework/">https://code.google.com/p/appframework/</a></p>
+<ul>
+<li>all dao and service class has its parent class1.</li>
+<li>all http request param is wrapped in Map</li>
+<li>provides asynchronous calls of service/dao for http request</li>
+<li>provides page/data/download/upload interface to light your code</li>
+<li>provides listeners wrapped for you to filter http request</li>
+<li>supports html/xml/json result for ajax request</li>
+<li>provides basic encode and encrypt methods, such as MD5,base64,zip</li>
+<li>provides wrapped log for log4j and common-logging</li>
+<li>provides common utils , such as DateTimeUtil, ConfigUtil, IpUtil, EscapeUtil, DomainUtil, SwfUtil ...</li>
+<li>provides <a href="http://www.fusioncharts.com/">fusioncharts</a> java bean wrapped classes</li>
+</ul><h1>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h1>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>appframework requires:</p>
+
+<ul>
+<li>Java 6 or higher.</li>
+<li>spring-framework</li>
+<li>other jars in the central repository</li>
+</ul><h2>
+<a name="develop-requirements" class="anchor" href="#develop-requirements"><span class="octicon octicon-link"></span></a>Develop Requirements</h2>
+
+<p>Eclispe 3.6+ with <a href="http://www.eclipse.org/m2e/download/">m2eclipse plugins</a> </p>
+
+<h1>
+<a name="download-and-installation" class="anchor" href="#download-and-installation"><span class="octicon octicon-link"></span></a>Download and Installation</h1>
+
+<p>Releases are available in the central repository.
+The current stable release of appframework: <em>1.1.4</em></p>
+
+<h2>
+<a name="download-links" class="anchor" href="#download-links"><span class="octicon octicon-link"></span></a>Download links:</h2>
+
+<p>source: <a href="http://code.google.com/p/appframework/source/browse/">http://code.google.com/p/appframework/source/browse/</a></p>
+
+<p>JAR package: <a href="http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.4/appframework-1.1.4.jar">http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.4/appframework-1.1.4.jar</a></p>
+
+<p>Repository: <a href="http://search.maven.org/#search%7Cga%7C1%7Corg.jiucai">http://search.maven.org/#search|ga|1|org.jiucai</a></p>
+
+<h2>
+<a name="maven-project-configuration" class="anchor" href="#maven-project-configuration"><span class="octicon octicon-link"></span></a>Maven project configuration:</h2>
+
+<p>Edit your project pom.xml and add :</p>
+
+<pre><code>    &lt;dependency&gt;
+        &lt;groupId&gt;org.jiucai&lt;/groupId&gt;
+        &lt;artifactId&gt;appframework&lt;/artifactId&gt;
+        &lt;version&gt;1.1.4&lt;/version&gt;
+    &lt;/dependency&gt;
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h1>
+<a name="development-and-bug-reports" class="anchor" href="#development-and-bug-reports"><span class="octicon octicon-link"></span></a>Development and bug reports</h1>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p>You may check out the appframework source code from appframework <a href="http://code.google.com/p/appframework/source/checkout">SVN repository</a>.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p>You may also <a href="http://code.google.com/p/appframework/source/browse/">browse</a> the appframework source code.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>If you find a bug in appframework, please <a href="http://code.google.com/p/appframework/issues/entry">report a bug</a>. </p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>You may review open bugs through <a href="http://code.google.com/p/appframework/issues/list">the list of open issues</a>.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>Feel free to improve the <a href="http://code.google.com/p/appframework/w/list">documentation</a> .</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<h1>
+<a name="history" class="anchor" href="#history"><span class="octicon octicon-link"></span></a>History</h1>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>1.1.4 Stable Release based spring-framework 3.2.3</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
+<p>1.0.1 Stable Release based spring-framework 3.0.7</p>
 
-        <footer>
-          Appframework is maintained by <a href="https://github.com/jiucai">jiucai</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
+<h1>
+<a name="author-and-copyright" class="anchor" href="#author-and-copyright"><span class="octicon octicon-link"></span></a>Author and copyright</h1>
 
-        
-      </div>
+<p>The appframework library is developed by the team of developers and it is based on spring framework.</p>
+
+<p>appframework is released under the Apache 2.0 license.</p>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Appframework maintained by <a href="https://github.com/jiucai">jiucai</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
