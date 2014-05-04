@@ -3,35 +3,32 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+
     <title>Appframework by jiucai</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Appframework</h1>
-          <h2></h2>
-        </header>
+    <header>
+      <div class="container">
+        <h1>Appframework</h1>
+        <h2></h2>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/jiucai/appframework/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/jiucai/appframework/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/jiucai/appframework" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <section id="downloads">
+          <a href="https://github.com/jiucai/appframework/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/jiucai/appframework/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/jiucai/appframework" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
         </section>
+      </div>
+    </header>
 
-        <hr>
-
-        <section id="main_content">
-          <h1>
+    <div class="container">
+      <section id="main_content">
+        <h1>
 <a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h1>
 
 <p>appframework is a java web application framework based <a href="http://www.springsource.org/spring-framework">spring-framework</a></p>
@@ -41,42 +38,43 @@
 <p>appframework features:</p>
 
 <ul>
-<li>all dao and service class has its parent class1.</li>
-<li>all http request param is wrapped in Map</li>
-<li>provides asynchronous calls of service/dao for http request</li>
-<li>provides page/data/download/upload interface to light your code</li>
-<li>provides listeners wrapped for you to filter http request</li>
-<li>supports html/xml/json result for ajax request</li>
-<li>provides basic encode and encrypt methods, such as MD5,base64,zip</li>
-<li>provides wrapped log for log4j and common-logging</li>
-<li>provides common utils , such as DateTimeUtil, ConfigUtil, IpUtil, EscapeUtil, DomainUtil, SwfUtil ...</li>
-<li>provides <a href="http://www.fusioncharts.com/">fusioncharts</a> java bean wrapped classes</li>
+<li><p>all dao and service class has its parent class.</p></li>
+<li><p>all http request param is wrapped in Map</p></li>
+<li><p>provides asynchronous calls of service/dao for http request</p></li>
+<li><p>provides page/data/download/upload interface to light your code</p></li>
+<li><p>provides listeners wrapped for you to filter http request</p></li>
+<li><p>supports html/xml/json result for ajax request</p></li>
+<li><p>provides basic encode and encrypt methods, such as MD5,base64,zip</p></li>
+<li><p>provides wrapped log for log4j and common-logging</p></li>
+<li><p>provides common utils , such as DateTimeUtil, ConfigUtil, IpUtil, EscapeUtil, DomainUtil, SwfUtil ...</p></li>
+<li><p>provides <a href="http://www.fusioncharts.com/">fusioncharts</a> java bean wrapped classes</p></li>
 </ul><h1>
 <a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h1>
 
 <p>appframework requires:</p>
 
 <ul>
-<li>Java 6 or higher.</li>
-<li>spring-framework</li>
-<li>other jars in the central repository</li>
+<li><p>Java 6 or higher</p></li>
+<li><p>spring-framework 3.2.*</p></li>
+<li><p>other jars in the central repository</p></li>
 </ul><h2>
 <a name="develop-requirements" class="anchor" href="#develop-requirements"><span class="octicon octicon-link"></span></a>Develop Requirements</h2>
 
-<p>Eclispe 3.6+ with <a href="http://www.eclipse.org/m2e/download/">m2eclipse plugins</a> </p>
+<p>Eclispe 3.6+ with <a href="http://www.eclipse.org/m2e/download/">m2eclipse plugins</a></p>
 
 <h1>
 <a name="download-and-installation" class="anchor" href="#download-and-installation"><span class="octicon octicon-link"></span></a>Download and Installation</h1>
 
-<p>Releases are available in the central repository.
-The current stable release of appframework: <em>1.1.4</em></p>
+<p>Releases are available in the central repository.</p>
+
+<p>The current stable release of appframework: <em>1.1.6</em></p>
 
 <h2>
 <a name="download-links" class="anchor" href="#download-links"><span class="octicon octicon-link"></span></a>Download links:</h2>
 
-<p>source: <a href="http://code.google.com/p/appframework/source/browse/">http://code.google.com/p/appframework/source/browse/</a></p>
+<p>source: <a href="http://hg.jiucai.org/appframework/src">http://hg.jiucai.org/appframework/src</a></p>
 
-<p>JAR package: <a href="http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.4/appframework-1.1.4.jar">http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.4/appframework-1.1.4.jar</a></p>
+<p>JAR package: <a href="http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.6/appframework-1.1.6.jar">http://repo2.maven.org/maven2/org/jiucai/appframework/1.1.6/appframework-1.1.6.jar</a></p>
 
 <p>Repository: <a href="http://search.maven.org/#search%7Cga%7C1%7Corg.jiucai">http://search.maven.org/#search|ga|1|org.jiucai</a></p>
 
@@ -88,25 +86,31 @@ The current stable release of appframework: <em>1.1.4</em></p>
 <pre><code>    &lt;dependency&gt;
         &lt;groupId&gt;org.jiucai&lt;/groupId&gt;
         &lt;artifactId&gt;appframework&lt;/artifactId&gt;
-        &lt;version&gt;1.1.4&lt;/version&gt;
+        &lt;version&gt;1.1.6&lt;/version&gt;
     &lt;/dependency&gt;
 </code></pre>
 
 <h1>
 <a name="development-and-bug-reports" class="anchor" href="#development-and-bug-reports"><span class="octicon octicon-link"></span></a>Development and bug reports</h1>
 
-<p>You may check out the appframework source code from appframework <a href="http://code.google.com/p/appframework/source/checkout">SVN repository</a>.</p>
+<p>You may check out the appframework source code from appframework <a href="https://bitbucket.org/jiucai/appframework">HG repository</a>.</p>
 
-<p>You may also <a href="http://code.google.com/p/appframework/source/browse/">browse</a> the appframework source code.</p>
+<p>You may also <a href="http://hg.jiucai.org/appframework/src">browse</a> the lastest appframework source code.</p>
 
-<p>If you find a bug in appframework, please <a href="http://code.google.com/p/appframework/issues/entry">report a bug</a>. </p>
+<p>If you find a bug in appframework, please <a href="http://hg.jiucai.org/appframework/issues/new">report a bug</a>.</p>
 
-<p>You may review open bugs through <a href="http://code.google.com/p/appframework/issues/list">the list of open issues</a>.</p>
+<p>You may review open bugs through <a href="http://hg.jiucai.org/appframework/issues?status=new&amp;status=open">the list of open issues</a>.</p>
 
 <p>Feel free to improve the <a href="http://code.google.com/p/appframework/w/list">documentation</a> .</p>
 
+<p>And you can <a href="http://weibo.com/forcer521">contact me on weibo.com</a></p>
+
 <h1>
 <a name="history" class="anchor" href="#history"><span class="octicon octicon-link"></span></a>History</h1>
+
+<p>1.1.6 Stable Release based spring-framework 3.2.8</p>
+
+<p>1.1.5 Stable Release based spring-framework 3.2.6</p>
 
 <p>1.1.4 Stable Release based spring-framework 3.2.3</p>
 
@@ -118,15 +122,9 @@ The current stable release of appframework: <em>1.1.4</em></p>
 <p>The appframework library is developed by the team of developers and it is based on spring framework.</p>
 
 <p>appframework is released under the Apache 2.0 license.</p>
-        </section>
-
-        <footer>
-          Appframework is maintained by <a href="https://github.com/jiucai">jiucai</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    
   </body>
 </html>
